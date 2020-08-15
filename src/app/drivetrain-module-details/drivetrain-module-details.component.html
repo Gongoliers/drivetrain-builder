@@ -1,0 +1,9 @@
+<ng-container *ngIf="module">
+  <h4 class="drivetrain-module-details-name">{{ module.name }}</h4>
+  <p class="drivetrain-module-details-description text-justify">
+    {{ module.description }}
+  </p>
+  <code class="drivetrain-module-details-code">
+    {{ module.className | javaClassGenerator: parameterNames }}
+  </code>
+</ng-container>

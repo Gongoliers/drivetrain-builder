@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { DrivetrainModule } from "./models/DrivetrainModule";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = 'drivetrain-builder';
+  selectedModule: DrivetrainModule;
 }

@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.selected {
+  opacity: 1;
+}
+
+app-drivetrain-module:not(.selected) {
+  opacity: 0.5;
+}
+
+app-drivetrain-module:not(.selected):hover {
+  opacity: 0.8;
+}

@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body,
+html {
+  height: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cpu {
+  background-image: url("assets/cpu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.drivetrain-module-icon {
+  width: 100px;
+  height: 100px;
+  padding: 32px;
+}

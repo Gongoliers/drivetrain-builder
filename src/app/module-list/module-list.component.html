@@ -1,0 +1,9 @@
+<div class="row">
+  <app-drivetrain-module
+    *ngFor="let module of modules"
+    [module]="module"
+    class="mb-3 mt-3 col-12 col-sm-6 col-md-4"
+    [class.selected]="selected === module"
+    (click)="selectModule(module)"
+  ></app-drivetrain-module>
+</div>
