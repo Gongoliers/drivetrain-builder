@@ -1,5 +1,10 @@
 <ng-container *ngIf="module">
-  <h4 class="drivetrain-module-details-name">{{ module.name }}</h4>
+  <h4 class="drivetrain-module-details-name">
+    {{ module.name }}
+  </h4>
+  <p class="override-user-badge bg-warning mb-2" *ngIf="module.overridesUser">
+    overrides driver
+  </p>
   <p class="drivetrain-module-details-description text-justify">
     {{ module.description }}
   </p>
